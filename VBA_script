@@ -45,11 +45,11 @@ Sub stockmarket()
             
             
   'Label bonus cells'
-      Cells(2, 14).Value = "Greatest % Increase"
-      Cells(3, 14).Value = "Greatest % Decrease"
-      Cells(4, 14).Value = "Greatest Total Volume"
-      Cells(1, 15).Value = "Ticker"
-      Cells(1, 16).Value = "Value"
+      Range("N2").Value = "Greatest % Increase"
+      Range("N3").Value = "Greatest % Decrease"
+      Range("N4").Value = "Greatest Total Volume"
+      Range("O1").Value = "Ticker"
+      Range("P1").Value = "Value"
 
    
   'Begin forloop'
@@ -136,12 +136,12 @@ Sub stockmarket()
     
     
   'Populate bonus table values'
-        Cells(2, 15).Value = GreatestGainTicker
-        Cells(2, 16).Value = GreatestGain
-        Cells(3, 15).Value = GreatestLossTicker
-        Cells(3, 16).Value = GreatestLoss
-        Cells(4, 15).Value = GreatestVolumeTicker
-        Cells(4, 16).Value = GreatestVolume
+        Range("O2").Value = GreatestGainTicker
+        Range("P2").Value = GreatestGain
+        Range("O3").Value = GreatestLossTicker
+        Range("P3").Value = GreatestLoss
+        Range("O4").Value = GreatestVolumeTicker
+        Range("P4").Value = GreatestVolume
             
     
 'Run on next worksheet'
